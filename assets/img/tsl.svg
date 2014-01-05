@@ -1,0 +1,40 @@
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="64px" height="64px" id="svg2985" version="1.1" inkscape:version="0.48.2 r9819">
+  <style>
+	.style1{
+		fill:	#ffffff;
+	}
+	.style2{
+		display:	inline;
+	}
+	.style3{
+		fill:	none;
+		fill-rule:	nonzero;
+		stroke:	#ea1b01;
+		stroke-width:	6.14161205;
+		mask:	url(#mask3780);
+	}
+	.style4{
+		fill:	#ea1b01;
+	}
+</style><defs id="defs2987">
+    <mask maskUnits="userSpaceOnUse" id="mask3780">
+      <path d="M 54.3 1.5 39.9 12.2 32.2 8.9 32 17.6 35.8 26.3 62.4 1.5 67.2 63.5 2.1 61.6 -3.1 -10.9 61 -12.9 z" id="path3782" inkscape:connector-curvature="0" class="style1"/>
+    </mask>
+  </defs>
+  <metadata id="metadata2990">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g id="layer1" inkscape:label="Layer 1" inkscape:groupmode="layer" class="style2">
+    <path id="path2992" d="m 47.7 32.9 a 19.4 19.4 0 1 1 -38.8 0 19.4 19.4 0 1 1 38.8 0 z" transform="matrix(1.1710902,0,0,1.1710902,-6.4333492,-1.8265108)" class="style3"/>
+  </g>
+  <g inkscape:groupmode="layer" id="layer4" inkscape:label="Ebene#1" class="style2"/>
+  <g inkscape:groupmode="layer" id="layer2" inkscape:label="Ebene" class="style2">
+    <path inkscape:connector-curvature="0" id="path3811" d="m 61.7 1.9 -25.9 24.2 -3.2 -8.1 0 -6.7 5.5 6.5 z" class="style4"/>
+  </g>
+</svg>
