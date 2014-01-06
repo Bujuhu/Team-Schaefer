@@ -1,106 +1,44 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Team Schäfer</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="http://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+---
+layout: default
+title: Team Schäfer
+img: assets/img/schaefertafel.jpg
+---
 
-		<!-- build:css assets/css/main.css -->
-		<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
-		<link rel="stylesheet" href="assets/css/app.css">
-		<!-- endbuild -->
-	</head>
-	<body>
-		<header class="navbar">
-			<nav>
-				<ul class="nav">
-					<li class="logo">
-						<a href="/index.html">
-							<img src="assets/img/tsl.svg" alt="Home">
-						</a>
-					</li>
-					<li><a href="/index.html">Team Schäfer</a></li>
-					<li><a href="#">Marc</a>
-						<ul class="dropdown">
-								<li><a href="#">Enstehung</a></li>
-								<li><a href="#">Breaking News</a></li>
-							</ul>
-					</li>
-					<li><a href="#">News</a>
-							<ul class="dropdown">
-								<li><a href="#">Informationen</a></li>
-								<li><a href="#">Breaking News</a></li>
-							</ul>
-					</li>
-					<li><a href="#">Programm</a>
-						<ul class="dropdown">
-							<li><a href="#">Was wir fordern</a></li>
-							<li><a href="#">Unsere Erfolge</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-		</header>
-
-		<div class="wrapper">
-			<div class="masthead">
-				<img src="assets/img/schaefertafel.jpg" alt="Team Schäfer">
-			</div>
-			<div class="nouns">
-				<div class="noun-l">
-					<h2><img src="assets/img/tsl.svg" alt="">Wahrheit</h2>
-					<p>Wir haben den Mut, endlich die Warheit zu sagen. Die Warheit ist, wir sind die besten! <br><a href="">Mehr »</a></p>
-				</div>
-				<div class="noun-l">
-					<h2><img src="assets/img/tsl.svg" alt="">Transparenz</h2>
-					<p>Wir fordern Transparenz in allen Bereichen der Privtapersonen und gehen mit gutem Beispiel voran. <br><a href="">Mehr »</a></p>
-				</div>
-				<div class="noun">
-					<h2><img src="assets/img/tsl.svg" alt="">Nudeln</h2>
-					<p>
-						Nudeln ist für uns die Basis politischer Entscheidung und steht im Zentrum unseres Handelns. <br><a href="">Mehr »</a>
-					</p>
-				</div>
-			</div>
-			<div class="boxes">
-				<div class="boxA">
-					<p><span>Weniger Apfel.</span><br>
-					Mehr Apfelkuchen</p>
-					<div class="boxbg">
-						<p>Team Schäfer</p>
-						<object type="image/svg+xml" data="assets/img/tsl_w.svg"></object>
-					</div>
-				</div>
-				<div class="boxB">
-					<p><span>Schluss mit Pildung</span><br>
-					Mehr Party!</p>
-					<div class="boxbg">
-						<p>Team Schäfer</p>
-						<object type="image/svg+xml" data="assets/img/tsl_w.svg"></object>
-					</div>
-				</div>
-				<div class="boxC">
-					<p>Die Flut<span> der</span> Gewässer<br>
-					Eindämmen
-					</p>
-					<div class="boxbg">
-						<p>Team Schäfer</p>
-						<object type="image/svg+xml" data="assets/img/tsl_w.svg"></object>
-					</div>
-				</div>
-				<div class="boxD">
-					<p>Neue Religionen <span>für</span><br>
-					mehr Vielfalt!
-					</p>
-					<div class="boxbg">
-						<p>Team Schäfer</p>
-						<object type="image/svg+xml" data="assets/img/tsl_w.svg"></object>
-					</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</body>
-</html>
+<div class="nouns">
+	<div class="noun-l">
+		<h2><img src="assets/img/tsl.svg" alt="">Wahrheit</h2>
+		<p>Wir haben den Mut, endlich die Warheit zu sagen. Die Warheit ist, wir sind die besten! <br><a href="">Mehr »</a></p>
+	</div>
+	<div class="noun-l">
+		<h2><img src="assets/img/tsl.svg" alt="">Transparenz</h2>
+		<p>Wir fordern Transparenz in allen Bereichen der Privtasphäre und gehen mit gutem Beispiel voran. <br><a href="">Mehr »</a></p>
+	</div>
+	<div class="noun">
+		<h2><img src="assets/img/tsl.svg" alt="">Nudeln</h2>
+		<p>Nudeln ist für uns die Basis politischer Entscheidung und steht im Zentrum unseres Handelns. <br><a href="">Mehr »</a></p>
+	</div>
+</div>
+<div class="boxes">
+	<div class="boxA">
+		<p><span>Weniger Apfel.</span><br>
+		Mehr Apfelkuchen</p>
+		{% include boxbg.html %}
+	</div>
+	<div class="boxB">
+		<p><span>Schluss mit Pildung</span><br>
+		Mehr Party!</p>
+		{% include boxbg.html %}
+	</div>
+	<div class="boxC">
+		<p>Die Flut<span> der</span> Gewässer<br>
+		Eindämmen
+		</p>
+		{% include boxbg.html %}
+	</div>
+	<div class="boxD">
+		<p>Neue Religionen <span>für</span><br>
+		mehr Vielfalt!
+		</p>
+		{% include boxbg.html %}
+	</div>
+</div>

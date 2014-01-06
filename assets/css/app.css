@@ -13,10 +13,18 @@ a {
 }
 p{
 	font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: 400;
+	font-weight: 300;
+	color: #3A3A46;
+}
+h1{
+	font-size: 60px;
+	color: #3A3A46;
 }
 h1,h2{
-	font-family: 'Arial Black', Arial, sans-serif;
+	text-transform: uppercase;
+	font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-align: center;
+	font-weight: 700;
 }
 
 a:hover,
@@ -61,7 +69,8 @@ a:focus {
 }
 
 .nav a:hover,
-.nav a:focus {
+.nav a:focus,
+.nav .current {
 	background-color: #662B2D;
 }
 
@@ -74,8 +83,7 @@ a:focus {
 }
 
 .nav > .logo img {
-	width: 34px;
-	height: 34px;
+	height: 32px;
 	vertical-align: top;
 }
 
@@ -101,7 +109,6 @@ a:focus {
 
 .dropdown > li > a {
 	display: block;
-	padding: 12px 20px;
 }
 
 /*-----  End of Dropdown  ------*/
@@ -127,10 +134,7 @@ a:focus {
 
 
 .wrapper {
-	color: #3A3A46;
-	padding-top: 66px;
-	margin: 0 auto;
-	text-align: center;
+	padding-top: 64px;
 }
 
 /*================================
@@ -145,7 +149,6 @@ a:focus {
 
 .nouns h2 {
 	color: #ea1b01;
-	text-transform: uppercase;
 }
 
 .nouns img {
@@ -184,6 +187,7 @@ a:focus {
 	font-size: 25px;
 	text-transform: uppercase;
 	font-family: 'Arial Black';
+	color: #fff;
 }
 .boxes > div > p > span{
 	font-size: 20px;
@@ -204,7 +208,6 @@ a:focus {
 	background-color: #FF9933
 }
 .boxes > div{
-	text-align: left;
 	padding: 0 25px;
 	height: 300px;
 	width: 200px;
@@ -227,7 +230,7 @@ a:focus {
 }
 .boxbg p{
 	float: left;
-	font-family: 'Arial Black';
+	font-family: 'Arial Black', Arial, sans-serif;
 	font-size: 20px;
 	background-color: inherit;
 	color: #fff;
@@ -243,3 +246,14 @@ a:focus {
 	z-index: -1;
 }
 /*-----  End of Obviousbox  ------*/
+.text{
+	width: 800px;
+	margin: 1px auto;
+}
+.text img{
+	float: left;
+}
+.textheader{
+	font-size: 20px;
+	font-family: Arial, sans-serif;
+}

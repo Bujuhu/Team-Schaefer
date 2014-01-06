@@ -3,17 +3,17 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    clean: ['dist/'],
+    clean: ['dist/','_site'],
 
     useminPrepare: {
-      html: 'index.html',
+      html: '_site/*.html',
       options: {
         dest: 'dist/'
       }
     },
 
     usemin: {
-      html: 'dist/index.html'
+      html: 'dist/*.html'
     },
 
     htmlmin: {
@@ -36,11 +36,14 @@ module.exports = function(grunt) {
         }]
       }
     },
-
+    jekyll: {
+      task:{}
+    },
     copy: {
       dist: {
         files: [{
           expand: true,
+          cwd:'_site/',
           src: [
             '*.png',
             '*.ico',
@@ -59,7 +62,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-usemin');
+  grunt.loadNpmTasks('grunt-jekyll');
 
-  grunt.registerTask('default', ['clean', 'useminPrepare', 'concat', 'cssmin', 'copy', 'usemin', 'htmlmin']);
+  grunt.registerTask('default', ['clean', 'jekyll','useminPrepare', 'concat', 'cssmin', 'copy', 'usemin', 'htmlmin']);
 
 };
