@@ -52,3 +52,7 @@ $RECYCLE.BIN/
 
 ###Jekyll###
 _site
+
+###Grunt###
+dist
+.tmp
