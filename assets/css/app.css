@@ -22,13 +22,28 @@ h1{
 	margin: 0;
 	padding: 20px;
 }
+h2{
+	color: #ea1b01;
+}
+h2 img{
+	width: 50px;
+	height: 50px;
+	position: relative;
+	top: 6px;
+}
 h1,h2{
 	text-transform: uppercase;
 	font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	text-align: center;
 	font-weight: 700;
 }
-
+th{
+	min-width: 300px;
+	padding: 10px;
+}
+th h2{
+	text-align: right;
+}
 a:hover,
 a:focus {
 	text-decoration: underline;
@@ -148,18 +163,6 @@ a:focus {
 	width: 902px;
 	margin: 30px auto;
 }
-
-.nouns h2 {
-	color: #ea1b01;
-}
-
-.nouns img {
-	width: 50px;
-	height: 50px;
-	position: relative;
-	top: 6px;
-}
-
 .nouns p {
 	text-align: justify;
 	padding: 20px;
@@ -257,7 +260,7 @@ a:focus {
 	width: 800px;
 	margin: 1px auto;
 }
-.text img{
+.text > img{
 	float: left;
 }
 .textheader{
@@ -316,3 +319,13 @@ a:focus {
 }
 
 /*-----  End of Team  ------*/
+
+/*================================
+=             News               =
+================================*/
+.news{
+	text-align: center;
+	color: #888;
+	font-size: 120px;
+}
+/*-----  End of Newa  ------*/
