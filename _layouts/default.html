@@ -22,10 +22,10 @@
 						</a>
 					</li>
 					<li><a href="index.html">Team Schäfer</a></li>
-					<li><a href="about.html" {% if page.url == '/about.html' or page.url == '#' %}class ="current"{% endif %}>Marc</a>
+					<li><a href="about.html" {% if page.url == '/about.html' or page.url == '/team.html' %}class ="current"{% endif %}>Marc</a>
 						<ul class="dropdown">
 								<li><a href="about.html" {% if page.url == '/about.html' %}class ="current"{% endif %}>Über Marc</a></li>
-								<li><a href="#" {% if page.url == '#' %}class ="current"{% endif %}>Das Team</a></li>
+								<li><a href="team.html" {% if page.url == '/team.html' %}class ="current"{% endif %}>Das Team</a></li>
 							</ul>
 					</li>
 					<li><a href="#" {% if page.url == '#' or page.url == '#' %}class ="current"{% endif %}>News</a>
@@ -45,7 +45,8 @@
 		</header>
 		<div class="wrapper">
 			<div class="masthead">
-				<img src="{{page.img}}" alt="{{page.title}}">
+				{% unless page.img == nil %}<img src="{{page.img}}" alt="">{% endunless %}
+				{% unless page.url == '/index.html' %}<h1>{{page.title}}</h1>{% endunless %}
 			</div>
 
 			{{ content }}

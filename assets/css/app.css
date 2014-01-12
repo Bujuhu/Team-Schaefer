@@ -18,7 +18,9 @@ p{
 }
 h1{
 	font-size: 60px;
-	color: #3A3A46;
+	color: #fff;
+	margin: 0;
+	padding: 20px;
 }
 h1,h2{
 	text-transform: uppercase;
@@ -118,7 +120,7 @@ a:focus {
 ================================*/
 
 .masthead {
-	background-color: #2A2A33;
+	background-color: #3A3A46;
 }
 
 .masthead img {
@@ -263,3 +265,54 @@ a:focus {
 	font-family: Arial, sans-serif;
 }
 /*-----  End of Text  ------*/
+
+/*================================
+=            Team                =
+================================*/
+
+.team{
+	width: 100%;
+	background-color: #3A3A46;
+	color: #fff !important;
+}
+.team:after{
+	content: "";
+  display: table;
+  clear: both;
+}
+.team img
+{
+	max-width: 100%;
+	z-index: -1;
+}
+.team .title{
+	float: left;
+	position: relative;
+	bottom: 400px;
+	margin-left: 60px;
+	font-family: 'Times New Roman';
+	font-style: italic;
+	}
+.title h2{
+	margin: 0;
+	text-transform: none;
+	font: inherit;
+	font-weight: bold;
+	text-align: left;
+	font-size: 100px;
+	color: inherit;
+}
+.title p{
+	color: inherit;
+	font: inherit;
+	font-size: 25px;
+	width: 500px;
+}
+.title a{
+	color: #eee;
+}
+.team > p{
+	float: left;
+}
+
+/*-----  End of Team  ------*/
