@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>{{ page.title }}</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
-
-	<!-- build:css assets/css/main.css -->
-	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
-	<link rel="stylesheet" href="assets/css/app.css">
-	<!-- endbuild -->
-</head>
-<body>
-	<header class="navbar">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>{{ page.title }}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css'>
+		<link rel='stylesheet'  href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700'>
+		<link rel="stylesheet" href="assets/css/app.css">
+	</head>
+	<body>
+		<header class="navbar">
 			<nav>
 				<ul class="nav">
 					<li class="logo">
@@ -28,17 +25,11 @@
 								<li><a href="/team.html" {% if page.url == '/team.html' %}class ="current"{% endif %}>Das Team</a></li>
 							</ul>
 					</li>
-					<li><a href="/news.html" {% if page.url == '/news.html' or page.url == '/news.html' %}class ="current"{% endif %}>News</a>
-							<!--<ul class="dropdown">
-								<li><a href="#" {% if page.url == '#' %}class ="current"{% endif %}>Informationen</a></li>
-								<li><a href="#" {% if page.url == '#' %}class ="current"{% endif %}>Breaking News</a></li>
-							</ul>-->
+					<li>
+						<a href="/news.html" {% if page.url == '/news.html' or page.url == '/news.html' %}class ="current"{% endif %}>News</a>
 					</li>
-					<li><a href="/program.html" {% if page.url == '/program.html' or page.url == '/program.html' %}class ="current"{% endif %}>Programm</a>
-						<!--<ul class="dropdown">
-							<li><a href="#" {% if page.url == '#' %}class ="current"{% endif %}>Was wir fordern</a></li>
-							<li><a href="#" {% if page.url == '#' %}class ="current"{% endif %}>Unsere Erfolge</a></li>-->
-						</ul>
+					<li>
+						<a href="/program.html" {% if page.url == '/program.html' or page.url == '/program.html' %}class ="current"{% endif %}>Programm</a>
 					</li>
 				</ul>
 			</nav>
